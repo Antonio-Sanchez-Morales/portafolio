@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+.container-nav {
+  background-image: url(./imagenes/Fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+  padding: 10px;
+}
+.nav-bar {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.nav-bar ul {
+  list-style: none;
+}
+.nav-bar ul li {
+  float: left;
+  margin-left: 20px;
+}
+.nav-bar ul li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.nav-bar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #d03b40;
+  transition: 0.5s;
+}
+.nav-bar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #ded6c0;
+  transition: 0.5s;
+}
+.nav-bar ul li:hover a {
+  color: #f9c35e;
+}
+.nav-bar ul li:hover a::before {
+  width: 50%;
+  transform: translate(100%);
+}
+.nav-bar ul li:hover a::after {
+  width: 50%;
+  transform: translate(-100%);
+}
+.header-text {
+  text-align: center;
+  margin-top: 180px;
+}
+.header-text h1 {
+  font-size: 44px;
+}
+.header-text p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* Card */
+.card {
+  height: 300px;
+  display: flex;
+  align-items: stretch;
+}
+.text-card {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: #d03b40;
+  color: #ded6c0;
+}
+.text-card h2 {
+  font-size: 24px;
+}
+.text-card p {
+  margin-top: 10px;
+}
+.text-card-two {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ded6c0;
+  color: #d03b40;
+}
+.text-card-two h2 {
+  font-size: 24px;
+}
+.text-card-two p {
+  margin-top: 10px;
+}
+
+/* Container-text-button */
+.container-text-button {
+  background-image: url(./imagenes/Fondo2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100px;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+.container-text-button h2 {
+  font-size: 44px;
+  margin-bottom: 50px;
+  margin-top: -120px;
+}
+.container-text-button p {
+  margin-bottom: 40px;
+}
+.container-text-button a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 12px;
+}
+.container-text-button a:hover {
+  color: #f9c35e;
+}
+
+/* Container-services */
+.container-service {
+  display: flex;
+  padding: 20px;
+  background-color: #f5f0ed;
+  justify-content: space-around;
+}
+.element-bread {
+  text-align: center;
+  margin-right: 10px;
+}
+.element-moffin {
+  text-align: center;
+  margin-right: 10px;
+}
+.element-pay {
+  text-align: center;
+  margin-right: 10px;
+}
+.element-wheat {
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* Card-two */
+.card-contact {
+  height: 300px;
+  display: flex;
+  align-items: stretch;
+}
+.text-about-us {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ded6c0;
+  color: #d03b40;
+}
+.text-about-us h2 {
+  font-size: 24px;
+}
+.text-about-us p {
+  margin-top: 10px;
+}
+.text-dress {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: #d03b40;
+  color: #ded6c0;
+}
+.text-dress h2 {
+  font-size: 24px;
+}
+.text-dress p {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: #241d1b;
+  padding: 30px;
+}
+footer p {
+  margin-left: 10px;
+}
